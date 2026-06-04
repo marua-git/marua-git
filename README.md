@@ -1,10 +1,4 @@
-[profile_README (1).md](https://github.com/user-attachments/files/28590969/profile_README.1.md)
-## Hi there 👋
-
-<!--
-**marua-git/marua-git** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:<div align="center">
+<div align="center">
 
 # Hi, I'm Marua 👋
 
@@ -110,14 +104,3 @@ ML Engineer and Data Scientist based in **Almaty, Kazakhstan** with hands-on exp
 *Open to collaboration on ML/Data projects · Based in Almaty, KZ*
 
 </div>
-
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
