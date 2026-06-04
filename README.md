@@ -1,10 +1,9 @@
 <div align="center">
 
-# Hi, I'm Marua 👋
+# Marua Makpyr
 
-**ML Engineer · Data Scientist · NLP & Computer Vision**
-
-*Building intelligent systems that turn raw data into business value*
+**ML Engineer · Data Scientist**  
+NLP · Computer Vision · End-to-end ML Pipelines
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/marua-makpyr-3941b1333)
 [![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/maruamakpyr)
@@ -14,38 +13,81 @@
 
 ---
 
-## 🧠 About Me
+## 🚀 Projects
 
-ML Engineer and Data Scientist based in **Almaty, Kazakhstan** with hands-on experience across the full ML lifecycle — from raw data to production deployment.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-- 🔍 Specializing in **NLP**, **Computer Vision**, and **financial document processing**
-- 🏗️ Building end-to-end pipelines: data ingestion → model training → REST API → monitoring
-- 📊 Strong background in **EDA**, feature engineering, and model optimization
-- ☁️ Deploying ML services with **FastAPI**, **Docker**, and **PostgreSQL**
+### 📄 [OCR Document Pipeline](https://github.com/marua-git/ocr-pipeline)
+
+A production-ready pipeline that transforms **scanned financial PDFs** into structured, queryable data. Built for MFOs and audit firms dealing with large volumes of Russian-language IFRS reports.
+
+**How it works:** PDF pages are rendered as images → enhanced with OpenCV (denoising, deskewing, CLAHE contrast) → passed through Tesseract OCR → tables detected via morphological analysis → financial fields extracted with regex → exported to PostgreSQL and Excel.
+
+**Results:** 95%+ accuracy on real MFO reports · 67-page document processed in ~4.5 min · 27 unit tests passing
+
+`Python` `FastAPI` `Tesseract` `OpenCV` `PostgreSQL` `Docker` `GitHub Actions`
+
+</td>
+<td width="50%" valign="top">
+
+### 📰 [News Recommendation API](https://github.com/marua-git/news-recommendation-api)
+
+A content-based recommendation engine that suggests relevant news articles based on what a user is currently reading. No user history or login required — works purely on article content similarity.
+
+**How it works:** Articles are vectorized using TF-IDF → similarity computed with cosine distance → top-N recommendations returned via REST API endpoint in real time.
+
+**Results:** Sub-100ms response time · Fully containerized with Docker · Clean REST API with FastAPI and Swagger docs
+
+`Python` `FastAPI` `scikit-learn` `TF-IDF` `Docker`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🐦 Twitter Airline Sentiment — NLP Classification
+
+Multi-class sentiment classifier trained on **14,640 airline tweets** (positive / negative / neutral). The project covers the full NLP pipeline from raw noisy text to a deployable model.
+
+**How it works:** Raw tweets cleaned (URLs, mentions, stopwords removed) → tokenized and vectorized → multiple classifiers compared (Logistic Regression, SVM, Naive Bayes) → best model selected based on F1-score per class.
+
+**Key insight:** Negative sentiment dominated the dataset (63%) — handled class imbalance with weighted loss to avoid biased predictions.
+
+`Python` `NLP` `scikit-learn` `NLTK` `Pandas` `Matplotlib` `Seaborn`
+
+</td>
+<td width="50%" valign="top">
+
+### 🔨 More coming soon...
+
+Currently building new projects in:
+- 📊 Time series forecasting
+- 🤖 LLM-powered applications
+- 🖼️ Computer Vision pipelines
+
+*Stay tuned — repositories will be added here as they're completed.*
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Languages & ML**
+**ML & Data Science**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-
-**ML / DL Frameworks**
-
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-FF6600?style=flat-square&logo=python&logoColor=white)
 ![CatBoost](https://img.shields.io/badge/CatBoost-FFCC00?style=flat-square&logo=python&logoColor=black)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-
-**Data & Tools**
-
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=python&logoColor=white)
+![NLTK](https://img.shields.io/badge/NLTK-154f3c?style=flat-square&logo=python&logoColor=white)
 
 **Backend & DevOps**
 
@@ -55,52 +97,44 @@ ML Engineer and Data Scientist based in **Almaty, Kazakhstan** with hands-on exp
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
 
----
+**CS Fundamentals**
 
-## 🚀 Featured Projects
-
-### 📄 [OCR Document Pipeline](https://github.com/marua-git/ocr-pipeline)
-> Production-grade OCR system for financial document processing
-
-- Extracts structured data from scanned MFO/bank reports (Russian + English)
-- 6-stage pipeline: PDF ingestion → OpenCV preprocessing → Tesseract OCR → table detection → field extraction → PostgreSQL/Excel export
-- **95%+ accuracy** on IFRS financial statements · 67-page reports in ~4.5 min
-- Stack: `Python` `FastAPI` `Tesseract` `OpenCV` `PostgreSQL` `Docker`
+![Algorithms](https://img.shields.io/badge/Algorithms_%26_Data_Structures-555?style=flat-square)
+![OOP](https://img.shields.io/badge/OOP-555?style=flat-square)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 
 ---
 
-### 📰 [News Recommendation API](https://github.com/marua-git/news-recommendation-api)
-> Content-based news recommendation engine
+## 🎓 Education
 
-- TF-IDF vectorization + cosine similarity for personalized news ranking
-- REST API with FastAPI · Dockerized deployment
-- Stack: `Python` `FastAPI` `scikit-learn` `Docker`
+**🏛️ International IT University (IITU / МУИТ)** · Almaty, Kazakhstan  
+B.Sc. Software Engineering · Minor in Data Science · *2023 – 2027*
 
 ---
 
-## 📈 Experience Highlights
+## 📜 Certifications
 
-| Period | Role | Company |
+| Certificate | Provider | Courses |
 |---|---|---|
-| Jan 2025 – Mar 2026 | ML Intern / Data Science | TOO AIMED |
-| Jun 2025 – Sep 2025 | Data Science Intern | Alatau Hub (Astana Hub) |
-
-**Key achievements:**
-- 📈 Lifted AUC-ROC from **0.79 → 0.91** (+14%) via Optuna hyperparameter tuning on XGBoost/CatBoost
-- 🔬 EDA on datasets of **500,000+ rows** — uncovered multicollinearity patterns that shaped modeling strategy
-- ⚙️ Automated data preparation pipelines, reducing report preparation time for the team
+| 🤖 Machine Learning Specialization | DeepLearning.AI / Stanford — Coursera | 3 |
+| 🧠 Deep Learning Specialization | DeepLearning.AI — Coursera | 5 |
+| 💬 Natural Language Processing Specialization | DeepLearning.AI — Coursera | 4 |
+| ⚙️ MLOps Specialization | DeepLearning.AI — Coursera | 4 |
+| 📊 Google Advanced Data Analytics | Google — Coursera | — |
+| ➗ Mathematics for Machine Learning | Imperial College London — Coursera | 3 |
+| 🐍 Python for Everybody | University of Michigan — Coursera | — |
+| 🔢 Data Structures & Algorithms | — | — |
 
 ---
 
-## 🎓 Education & Certifications
+## 🎹 Beyond Code
 
-- 🎓 **MIT** — Mechanical Engineering, 2018 *(placeholder — update with your actual education)*
-- 📜 Kaggle: Machine Learning, Pandas, Data Visualization
+Outside of work I play **piano** 🎹, play **tennis** 🎾, and spend time at the **gym** 🏋️‍♀️
 
 ---
 
 <div align="center">
 
-*Open to collaboration on ML/Data projects · Based in Almaty, KZ*
+📍 Almaty, Kazakhstan &nbsp;·&nbsp; Open to ML / Data Science opportunities
 
 </div>
